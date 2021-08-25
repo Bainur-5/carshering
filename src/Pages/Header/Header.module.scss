@@ -1,0 +1,145 @@
+.root{
+    width: 100%;
+    background-color: black;
+    text-align: start;
+    padding: 1rem 0;
+    height: 2.5vh;
+    ol{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            padding: 0;
+            span{
+                margin: 0;
+                color: gold;
+            }
+        }
+    }
+    ul{
+        width: 25%;
+        margin: 0 1rem 0 auto  ;
+        // margin-left: auto;
+        list-style: none;
+        text-decoration: none;
+        text-transform: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        li{
+            color: white;
+            border-top: white;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                margin: 100% 0;
+                position: relative;
+            }
+            
+            .active{
+                font-size: large;
+                font-weight: 500;
+            }
+            div{
+                width: 3rem;
+                height: 3rem;
+                background-color: white;
+                border-radius: 10000px;
+                text-align: center;
+                .icon{
+                    color: black;
+                    margin: 10px;
+                    font-size: 1.5rem;
+                }
+            }
+        }   
+    }
+        .active{
+            color: white;
+        }
+}
+@media screen and (max-width: 950px) {
+    .root{
+        
+        ul{
+            width: 35%;
+            li{
+                
+            div{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center ;
+                .icon{
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+            }
+            }
+        }
+    }
+}
+@media screen and (max-width: 828px) {
+    .root{
+        
+        ul{
+            li{
+                a{
+                    font-size: small;
+                }
+                .active{
+                    font-size: medium;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .root{
+        .cont{
+            ul{
+                width: 45%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .root{
+        ul{
+            width: 50%;
+            li{
+                a{
+                    font-size: .7rem;
+                }
+                .active{
+                    font-size: .9rem;
+                }
+                div{
+                    width: 2rem;
+                    height: 2rem;
+                    .icon{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .root{
+        
+        ul{
+            width: 55%;
+            li{
+                a{
+                    font-size: .5rem;
+                }
+                .active{
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}

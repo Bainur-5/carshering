@@ -1,0 +1,130 @@
+.root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cont_card{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 20%;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        h3{
+            text-align: center;
+        }
+        .card{
+            width: 100%;
+            .em_Pas{
+                width: 96%;
+                height: 4vh;
+                margin: .5rem 0;
+                padding: .1rem  .2rem;
+            }
+            .select{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    select{
+                        width: 35%;
+                        text-align: center;
+                        color: gold;
+                        background-color: rgba(255, 255, 255, 0);
+                        border: 1px solid gold;
+                        cursor: pointer;
+                        
+                        option{
+                            height: 10vh;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .right{
+                text-align: center;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    div{
+                        width: 50%;
+                        display: flex;
+                        input{
+                            cursor: pointer;
+                        }
+                        label{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .cont_Btn{
+            margin-top: 1rem;
+            width: 100%;
+            padding: .5rem;
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                background-color: gold;
+                border: none;
+                color: black;
+                padding: .5rem;
+                border-radius: .2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1265px){
+    .root{
+        .cont_card{
+            width: 35%;
+        }
+    }
+}
+@media screen and (max-width: 770px){
+    .root{
+        .cont_card{
+            width: 45%;
+        }
+    }
+}
+@media screen and (max-width: 590px){
+    .root{
+        .cont_card{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .root{
+        .cont_card{
+            width: 60%;
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .root{
+        .cont_card{
+            width: 70%;
+        }
+    }
+}
+@media screen and (max-width: 350px){
+    .root{
+        .cont_card{
+            width: 85%;
+        }
+    }
+}

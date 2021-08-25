@@ -1,0 +1,311 @@
+.root{
+    color: white;
+    .GGCard{
+        padding: 0 2rem;
+        padding-top: 2rem;
+        .startCard{
+            width: 100%;
+            height: 90vh;
+            position: relative;
+            margin-bottom: 1rem;
+            h1{
+                margin: 0;
+            }
+            h3{
+                margin: 0;
+            }
+            .img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -1rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .infoCard{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            .infoText1{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 2%;
+                .infoText1_card{
+                    margin: 0% auto;
+                    padding: 2% 0;
+                    text-align: center;
+                    width: 10rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    .infoText1_card_text{
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        width: 70%;
+                        height: 12vh;
+                        padding: 5% 4%;
+                        display: flex;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            margin: auto;
+                        }
+                        h2{
+                            margin: auto;
+                            text-align: center;
+                            font-size: 3rem;
+                            
+                        }
+                    }
+                    p{
+                        margin: 1rem 0 0 0;
+                        font-size: 100%;
+                    }
+                }
+            }
+            .infoText2{
+                width: 30%;
+                height: 15vh;
+                text-align: center;
+                .buttonCard{
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+                    button{
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, 0);
+                        color: gold;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1000px;
+                        border: 1px solid gold;
+                        transition: 1s;
+                        &:hover{
+                            color: white;
+                            background-color: gold;
+                        }
+                        h1{
+                            font-size: 1rem;
+                            margin: 0;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            .infoText3{
+                .sumCond{
+                    text-align: end;
+                    h1{
+                        margin: 0;
+                        margin-bottom: 0rem;
+                        font-size: 2rem;
+                    }
+                    h2{
+                        margin: 0;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.reg{
+    color: white;
+}
+
+@media screen and (max-width: 1535px){
+    .root{
+        .GGCard{
+            .startCard{
+                // height: 70vh;
+                margin-bottom: 4rem;
+                .img{
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1257px){
+    .root{
+        .GGCard{
+            .infoCard{
+                width: 100%;
+                .infoText1{
+                    width: 40%;
+                    margin: 0;
+                    .infoText1_card{
+                        .infoText1_card_text{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 9vh;
+                            h2{
+                                height: 10vh;
+                                font-size: 2.5rem;
+                                margin: 0;
+                                height: min-content;
+                            }
+                        }
+                        p{
+                            font-size: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 870px){
+    .root{
+        .GGCard{
+            .infoCard{
+                display: block;
+                margin-bottom: 2rem;
+                .infoText1{
+                    width: 100%;
+                    margin: 0;
+                    .infoText1_card{
+                        .infoText1_card_text{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 9vh;
+                            h2{
+                                height: 12vh;
+                                font-size:3rem;
+                                margin: 0;
+                                height: min-content;
+                            }
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        p{
+                            font-size: 100%;
+                        }
+                    }
+                }
+                .infoText2{
+                    width: 100%;
+                    text-align: center;
+                    margin: 2rem 0;
+                    .buttonCard{
+                        width: 30%;
+                    }
+                }
+                .infoText3{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .sumCond{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                        h2{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .root{
+        .GGCard{
+            .startCard{
+                height: 80vh;
+            }   
+            .infoCard{
+                display: block;
+                margin-bottom: 2rem;
+                .infoText2{
+                    .buttonCard{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    } 
+
+}
+@media screen and (max-width: 550px){
+    .root{
+        .GGCard{
+            .startCard{
+                height: 65vh;
+            }   
+        }
+    }
+} 
+@media screen and (max-width: 440px){
+    .root{
+        .GGCard{
+            .infoCard{
+                display: block;
+                margin-bottom: 2rem;
+                .infoText1{
+                    width: 100%;
+                    margin: 0;
+                    .infoText1_card{
+                        .infoText1_card_text{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 9vh;
+                            h2{
+                                height: 12vh;
+                                font-size:2rem;
+                                margin: 0;
+                                height: min-content;
+                            }
+                            img{
+                                width: 90%;
+                                height: 90%;
+                            }
+                        }
+                        p{
+                            font-size: 85%;
+                        }
+                    }
+                }
+                .infoText2{
+                    .buttonCard{
+                        width: 70%;
+                    }
+                }
+                .infoText3{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .sumCond{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h1{
+                            font-size: 1rem;
+                        }
+                        h2{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+}

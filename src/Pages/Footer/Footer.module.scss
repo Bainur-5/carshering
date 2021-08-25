@@ -1,0 +1,85 @@
+.root{
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    .GG_Cont{
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .nav_Cont{
+            width: 33%;
+            border-right: 1px solid white;
+            ul{
+                list-style: none;
+                li{
+                    margin: 1rem 0;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.2rem;
+                        text-orientation: 10px;
+                    }
+                }
+            }
+        }
+        .numer{
+            width: 33%;
+            border-right: 1px solid white;
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .media_Cont{
+            width: 33%;
+            ul{
+                list-style: none;
+                div{
+                    width: 40%  ;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    p{
+                        width: auto;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 2rem;
+                            transition: .5s;
+                            &:hover{
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:720px) {
+    .root{
+        .GG_Cont{
+            padding: 0;
+            .nav_Cont{
+                width: 95%;
+                border-right: none;
+                border-bottom: 1px solid white;
+            }
+            .numer{
+                width: 95%;
+                border-right: none;
+                border-bottom: 1px solid white;
+            }
+            .media_Cont{
+                width: 100%;
+                
+            }
+        }
+    }
+}

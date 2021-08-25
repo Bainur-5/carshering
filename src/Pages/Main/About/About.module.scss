@@ -1,0 +1,41 @@
+.root{
+    color: white;
+    margin-top: 15vh;
+    p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .info_content{
+        margin: 1rem auto;
+        width: 85%;
+        padding: 2rem 1rem;
+        border-radius: .5rem;
+        background-color: rgba(238, 238, 238, 0);
+        color: white;
+        .info_text{
+            width: 100%;
+            h1{
+                margin: 0;
+            }
+            p{
+                text-align: left;
+                font-size: medium;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    p{
+        font-size: large;
+    }
+    .info_content{
+        .info_text{
+            h1{
+                font-size: large;
+            }
+            p{
+                font-size: small;
+            }
+        }
+    }
+}

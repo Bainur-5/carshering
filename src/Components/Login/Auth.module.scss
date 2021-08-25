@@ -1,0 +1,80 @@
+.root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cont_card{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        width: 20%;
+        padding: 1rem;
+        border-radius: 1rem;
+        h3{
+            text-align: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            input{
+                width: 96%;
+                height: 4vh;
+                margin: .5rem 0;
+                padding: .1rem  .2rem;
+            }
+            .cont_btn{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .btn{
+                    width: 25%;
+                    padding: .3rem;
+                    background-color: rgba(255, 0, 0, 0);
+                    border: 1px solid gold;
+                    color: gold;
+                    cursor: pointer;
+                    &:disabled{
+                        background-color: red;
+                        color: red;
+                    }
+                }
+            }
+            .cont_reg{
+                width: 100%;
+                text-align: right;
+                margin-top: 1rem;
+                .btn{
+                    background-color: rgba(255, 217, 0, 0);
+                    border: 0;
+                    color: gold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 940px){
+    .root{
+        .cont_card{
+            width: 35%;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .root{
+        .cont_card{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .root{
+        .cont_card{
+            width: 70%;
+        }
+    }
+}
