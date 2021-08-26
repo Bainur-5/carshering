@@ -125,7 +125,7 @@
     .root{
         .GGCard{
             .startCard{
-                // height: 70vh;
+                height: auto;
                 margin-bottom: 4rem;
                 .img{
                     position: relative;
@@ -167,6 +167,9 @@
 @media screen and (max-width: 870px){
     .root{
         .GGCard{
+            .startCard{
+                height: auto;
+            }
             .infoCard{
                 display: block;
                 margin-bottom: 2rem;
@@ -223,11 +226,24 @@
         }
     }
 }
+
+@media screen and (max-width: 710px){
+    .root{
+        .GGCard{
+            .startCard{
+                .img{
+                    top: 3rem;
+                }
+            }   
+        }
+    }
+}
+
 @media screen and (max-width: 600px){
     .root{
         .GGCard{
             .startCard{
-                height: 80vh;
+                height: auto;
             }   
             .infoCard{
                 display: block;
@@ -246,7 +262,7 @@
     .root{
         .GGCard{
             .startCard{
-                height: 65vh;
+                height: auto;
             }   
         }
     }

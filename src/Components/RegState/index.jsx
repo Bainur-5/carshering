@@ -7,7 +7,7 @@ const RegState = ({setIsFetch}) =>{
                 <div className={cls.x}>
                     <ImCross onClick={() => setIsFetch(null)} className={cls.icon}/>
                 </div>
-                <div className={cls.title}>
+                <div className={cls.title_err}>
                     <h1>С начала зарегистрируйтесь</h1>
                 </div>
             </div>

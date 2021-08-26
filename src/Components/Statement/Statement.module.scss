@@ -23,7 +23,7 @@
             position: relative;
             width: 30%;
             height: 35vh;
-            .title{
+            .title, .title_err{
                 text-align: center;
             }
         }
@@ -79,3 +79,34 @@
             }
         }
     }
+@media screen and (max-width:900px) {
+    .cont_Sing{
+        .card{
+            width: 50%;
+            .title_err{
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .cont_Sing{
+        .card{
+            width: 70%;
+            .title_err{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .cont_Sing{
+        .card{
+            width: 90%;
+        }
+    }
+}
