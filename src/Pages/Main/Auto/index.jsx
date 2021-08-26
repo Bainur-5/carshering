@@ -1,9 +1,24 @@
 import { useState } from "react"
 import cls from './Auto.module.scss'
-import { RuClassAuto } from "../../../Components/ClassName"
 import Mark from "../../../Components/Mark"
 const Auto = () => {
-    
+    const RuClassAuto = [
+        {
+            mark: 'ВНЕДОРОЖНИК'
+        },
+        {
+            mark : 'СЕДАН'
+        },
+        {
+            mark : "КУПЕ"
+        },
+        {
+            mark : "КАБРИОЛЕТ"
+        },
+        {
+            mark :"МИНИВЭН"
+        },
+    ]
     const [ruClassName, setRuClassName] = useState('Все Авто')
     const [click, setClick] = useState(false)
     return(
