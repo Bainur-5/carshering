@@ -28,7 +28,7 @@ const History = () =>{
                 
             })
         }
-    },[])
+    },[card])
     console.log(card);
     return(   
         <div className={cls.cont_car}>

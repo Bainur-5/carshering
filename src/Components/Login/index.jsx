@@ -6,8 +6,7 @@ const Auth = () =>{
     const [password, setPassword] = useState('')
     const [disabledBtn, setDisabledBtn] = useState(false)
     const history = useHistory()
-    const signIn = (em, pas, setEm, setPas) =>{
-        
+    const signIn = (em, pas, setEm, setPas) =>{   
         if(em !== '' && pas !== ''){
             setDisabledBtn(true)
             
@@ -28,6 +27,8 @@ const Auth = () =>{
                 console.log(r);
                 localStorage.setItem('user', JSON.stringify(r))
                 history.push('/User')
+                setEm('')
+                setPas('')
                 setTimeout(() =>{
                     window.location.reload()
                 },100)

@@ -6,12 +6,10 @@ import { NavLink } from 'react-router-dom'
 
 const Mark = ({mark}) =>{
     const [card, setCard] = useState(null)
-    const [cards, setCards] = useState(false)
     useEffect(() =>{
     getCards()
     .then(res => res.json())
     .then(r => {
-        setCards(true)
         const data = Object.entries(r).map(item => {
             const id = item[0]
             return{
@@ -20,9 +18,8 @@ const Mark = ({mark}) =>{
             }
         })
         setCard(data)
-        setCards(false)
         })
-   },[mark, cards])
+   },[mark])
     
    return(
         

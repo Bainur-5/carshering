@@ -67,9 +67,9 @@
     .history{
         color: white;
         text-align: center;
-        .empty{
-            margin-bottom: 100vh;
-        }
+        height: 100vh;
+        // .empty{
+        // }
     }
 }
 @media screen  and (max-width: 1230px){
